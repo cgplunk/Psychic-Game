@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Psychic Game</title>
+</head>
+
+<body>
+
+  <div id="game">
+
+    <h1> The Psychic Game </h1>
+    <p>Guess what letter I'm thinking of!</p>
+    <p>Wins:</p>
+    <p>Losses:</p>
+    <p>Guesses Left:</p>
+    <p>Your Guesses so far:</p>
+
+  </div>
+
+  <script type="text/javascript">
+
+    var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+    document.onkeyup = function(event) {
+        var userGuess = event.key;
+
+        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+        ("User guess: " + userGuess);
+     
+        ("Computer guess: " + computerGuess);
+        
+        //should compare computer guess to user guess
+        //if win should record in win element, and reset computer guess
+        //if no match should record userguess to your guesses so far, and deduct 1 from the guesses left
+        //if guesses left hits 0 should reset guesses so far, computerguess, and add 1 to loss element
+        
+        
+
+
+  </script>
+
+</body>
+
+</html>
